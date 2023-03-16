@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Brandon Herbison | Developer</title>
+        <meta name="description" content="Software Developer portfolio for Brandon Herbison.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/c97e22f3dd.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;900&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header>
+            <nav class="container">
+                <div class="logo">
+                    <img src="images/light.png" alt="BH Logo" id="header-logo">
+                </div>
+                <div class="navlinks" id="nav-links">
+                        <a href="#home-section" class="navlink">home</a>
+                        <a href="#about-me-section" class="navlink">about me</a>
+                        <a href="#project-section" class="navlink">projects</a>
+                        <a href="#contact-section" class="navlink">contact</a>
+                </div>
+                <div class="home-socials">
+                    <a href="https://github.com/brandonherbison" target="_blank">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/brandonherbison/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+                 </div>
+                 <button class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                 </button>
+            </nav>
+        </header>
+
+        <main>
+            <!--Home Section-->
+            <section id="home-section" data-aos="fade-up" data-aos-duration="3000">
+               <div class="home-wrapper container">
+                   <!--Left side of the home section-->
+                    <div class="home-left">
+                        <div class="home-text">
+                            <p class="small-text">Hello world, I'm</p>
+                            <h1>Brandon Herbison</h1>
+                            <p class="medium-text">SOFTWARE DEVELOPER</p>
+                            <p class="medium-text"><i class="fa-solid fa-code fa-1xl"></i> Full Stack</p>
+                        </div>
+                        <div class="home-actions">
+                            <button class="mode-button" id="mode-button"><i class="fa-solid fa-sun fa-3x"></i></button>
+                        </div>
+                    </div>
+
+
+                    <!--Right side of the home section-->
+                    <div class="home-right">
+                        <img id="home-image" src="images/Developer activity-bro.svg" alt="man standing with blue cube">
+                    </div>
+               </div> 
+            </section>
+
+            <section id="about-me-section" data-aos="fade-up" data-aos-duration="2000">
+                <div class="about-wrapper container">
+                    <h1 class="section-header";>ABOUT ME</h1>
+                    <div class="description-wrapper">
+                        <img src="images/brandonherbison.png" alt="Photo of me" data-aos="fade-right" data-aos-duration="2000">
+                        <p data-aos="fade-right" data-aos-duration="2000">After completing college with a degree in Psychology focused on pre-med, I pursued an accelerated Medical Assistant training program and secured a job at a hospital. However, I soon realized my true passion lay in utilizing my critical thinking and problem-solving skills in a career better suited for them. My interest in software development was piqued upon witnessing a friend's projects at Nashville Software School. To begin my education, I used free online resources such as freeCodeCamp and codeCademy. I was accepted into Cohort 58 of Nashville Software School in early 2022, and the ensuing six months provided me with the most enriching education experience of my life. Now, I am a proficient full-stack software developer, and I am excited to continue learning and growing in this field.
+                        </p>
+                        <div class="code-block-card" data-aos="fade-left" data-aos-duration="2000">
+                            <div id="code-block">
+                                <pre id="javascript-snippet" class="code-snippet">
+ <!-------------------------------> class <b>Developer</b> {
+   <!------------------------------->   constructor() {
+   <!------------------------------->       this.firstName = 'Brandon'
+    <!------------------------------->      this.lastName = 'Herbison'
+   <!------------------------------->       this.dogs = 2,
+    <!------------------------------->      this.likes = ['Coding', 'Cooking', 'Sports']
+    <!----------------------------------->   }
+    <!-------------------------------->}
+                                    </pre>
+                                    <pre id="python-snippet" class="code-snippet">
+ <!-------------------------------> class <b>Developer()</b> {
+   <!------------------------------->    def __init__(self):
+    <!------------------------------->   self.firstName 'Brandon'
+    <!------------------------------->   self.lastName 'Herbison'
+   <!------------------------------->    self.dogs = 2,
+    <!------------------------------->   self.likes = ['Coding', 'Cooking', 'Sports']
+    <!-------------------------------->}
+                                    </pre>
+                                    <pre id="cSharp-snippet" class="code-snippet">
+<!------------------------------->  public class <b>Developer</b> {
+    <!------------------------------->   public string firstName = 'Brandon'
+     <!------------------------------->  public string lastName = 'Herbison'
+    <!------------------------------->   public int dogs = 2,
+     <!------------------------------->  public List < string > likes = ['Coding', 'Cooking']
+    <!----------------------------------->}
+                                    </pre>
+                            </div>
+                            <div class="language-selectors">
+                                <button class="language-button" onclick="selectLanguage('python')">Python</button>
+                                <button class="language-button" onclick="selectLanguage('cSharp')">C#</button>
+                                <button class="language-button" onclick="selectLanguage('javascript')">Javascript</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+             </section>
+
+             <section id="project-section" data-aos="fade-up" data-aos-duration="2000">
+                <div class="project-wrapper container">
+                    <h1 class="section-header";>PROJECTS</h1>
+                    <div class="projects">
+                        <div class="project" data-aos="fade-left" data-aos-duration="2000">
+                            <div class="project-description">
+                                <h2>Kwizzed</h2>
+                                <div class="technology-stack">
+                                    <h3>Technology</h3>
+                                    <ul>
+                                        <li>
+                                            <p>JavaScript</p>
+                                        </li>
+                                        <li>
+                                            <p>React</p>
+                                        </li>
+                                        <li>
+                                            <p>TailwindCSS</p>
+                                        </li>
+                                        <li>
+                                            <p>Python</p>
+                                        </li>
+                                        <li>
+                                            <p>Django REST Framework</p>
+                                        </li>
+                                        <li>
+                                            <p>SQLite (ROOM Database)</p>
+                                        </li>
+                                    </ul>
+                                    <h3>Features</h3>
+                                    <ul>
+                                        <li>
+                                            <p>REST API architecture</p>
+                                        </li>
+                                        <li>
+                                            <p>CRUD functionality</p>
+                                        </li>
+                                    </ul>
+                                    <div class="project-git">
+                                        <div class="project-link">
+                                            <a href="https://github.com/brandonherbison/kwizzed" target="_blank">
+                                                <i class="fa-brands fa-github fa-2x"></i>
+                                            </a>
+                                            <p>Source Code</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-media">
+                                <img src="images/kwizzed-screenshot.png">
+                            </div>
+                        </div>
+                        <div class="project" data-aos="fade-right" data-aos-duration="2000">
+                            <div class="project-description">
+                                <h2>Nomad Kitchen</h2>
+                                <div class="technology-stack">
+                                    <h3>Technology</h3>
+                                    <ul>
+                                        <li>
+                                            <p>JavaScript</p>
+                                        </li>
+                                        <li>
+                                            <p>React</p>
+                                        </li>
+                                        <li>
+                                            <p>Bootstrap 5</p>
+                                        </li>
+                                        <li>
+                                            <p>JSON Server</p>
+                                        </li>
+                                    </ul>
+                                    <h3>Features</h3>
+                                    <ul>
+                                        <li>
+                                            <p>Crud Functionality</p>
+                                        </li>
+                                        <li>
+                                            <p>Messaging System</p>
+                                        </li>
+                                    </ul>
+                                    <div class="project-git">
+                                        <div class="project-link">
+                                            <a href="https://github.com/brandonherbison/nomad-kitchen" target="_blank">
+                                                <i class="fa-brands fa-github fa-2x"></i>
+                                            </a>
+                                            <p>Source Code</p>
+                                        </div>
+                                    </div>
+                                </div>       
+                            </div>
+                            <div class="project-media">
+                                <img src="images/nomad-kitchen-screenshot.png" alt="Logo animation">
+                            </div>
+                        </div>
+                        <div class="project" data-aos="fade-left" data-aos-duration="2000">
+                            <div class="project-description">
+                                <h2>Portfolio Wesbite</h2>
+                                <div class="technology-stack">
+                                    <h3>Technology</h3>
+                                    <ul>
+                                        <li>
+                                            <p>HTML 5</p>
+                                        </li>
+                                        <li>
+                                            <p>CSS 3</p>
+                                        </li>
+                                        <li>
+                                            <p>Vanilla Javascript</p>
+                                        </li>
+                                    </ul>
+                                    <h3>Features</h3>
+                                    <ul>
+                                        <li>
+                                            <p>Fully responsive design.</p>
+                                        </li>
+                                        <li>
+                                            <p>Animate on Scroll (AOS) Library to provide seamless fade animations.</p>
+                                        </li>
+                                        <li>
+                                            <p>FormSubmit for handling messages from users.</p>
+                                        </li>
+                                    </ul>
+                                    <div class="project-git">
+                                        <div class="project-link">
+                                            <a href="https://github.com/brandonherbison/brandonherbison-portfolio-site" target="_blank">
+                                                <i class="fa-brands fa-github fa-2x"></i>
+                                            </a>
+                                            <p>Source Code</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-media">
+                                <img class="project-site-logo" src="images/B.png" alt="">    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div> 
+             </section>
+
+             <section id="contact-section" data-aos="fade-up" data-aos-duration="2000">
+                <div class="contact-wrapper container">
+                    <h1 class="section-header";>CONTACT</h1>
+                    <div class="contact-info">
+                        <div class="contact-left-side" data-aos="fade-right" data-aos-duration="2000">
+                            <i class="fa-solid fa-message fa-5x"></i>
+                            <h3>Thank you for visiting</h3>
+                            <p>To get in contact with me, leave a message!</p>
+                        </div>
+                        <div class="contact-right-side" data-aos="fade-left" data-aos-duration="2000">
+                            <form id="contact-form" action="https://formsubmit.co/fc0ee563ed4e743d16c63ac00ed374d0" method="POST">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="text" name="_honey" style="display:none">
+                                <input type="hidden" name="_next" value="https://devstone.io/thank-you.html">
+                                <div class="input-fields">
+                                    <div class="name-email-fields">
+                                        <div class="input-field">
+                                            <label>Name</label>
+                                            <input type="text" placeholder="Full Name" required name="name">
+                                        </div>
+                                        <div class="input-field">
+                                            <label>Email</label>
+                                            <input type="email" placeholder="Email Address" required name="email">
+                                        </div>
+                                    </div>
+                                    <div class="input-field" id="message-field">
+                                        <label>Message</label>
+                                        <textarea name="message" required cols="30" placeholder = "Message" rows="10"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit"><pre class="contact-form-button-text"">Send Message  <i class="fa-solid fa-paper-plane fa-2x1"></i></pre></button>
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+             </section>
+        </main>
+        <footer>
+            <div class="footer-wrapper container">
+                <img src="images/B.png" class="logo" alt="Logo" id="footer-logo">
+                <p>Designed and Built by Brandon Herbison</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/brandonherbison" target="_blank">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/brandonherbison/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+        <script src="javascript/index.js" async defer></script>
+    </body>
+</html>
