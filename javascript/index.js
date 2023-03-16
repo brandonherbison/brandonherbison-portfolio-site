@@ -24,6 +24,21 @@ function displaySettingSwitch() {
     }
 }
 
+const formButton = document.getElementById("form-button")
+formButton.addEventListener("click", submitForm)
+
+
+function submitForm() {
+    const name = document.getElementById("name").value
+    const email = document.getElementById("email").value
+    const message = document.getElementById("message").value
+    
+    if(name == "" || email == "" || message == "") {
+        alert("Please fill out all fields.")
+    } else {
+        alert("Thank you for your message!")
+    }
+}
 
 //Hamburger Navigation variables
 const hamburgerButton = document.getElementById("hamburger")
@@ -43,7 +58,7 @@ const pythonSnippet = document.getElementById("python-snippet")
 const javascriptSnippet = document.getElementById("javascript-snippet")
 const cSharpSnippet = document.getElementById("cSharp-snippet")
 
-//initializing the code block display with "Java".
+//initializing the code block display with "Python".
 javascriptSnippet.style.display = "none"
 cSharpSnippet.style.display = "none"
 
